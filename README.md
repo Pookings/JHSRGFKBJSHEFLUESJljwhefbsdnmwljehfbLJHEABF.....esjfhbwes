@@ -1,5 +1,7 @@
 # Shiruh
 
+Open index.html for the subject picker. Chemistry is in chemistry.html; biology is in biology/index.html. Biology includes 56 chapters, 1,966 glossary terms and 168 original/adapted practice questions.
+
 An interactive chemistry study guide adapted from the original Gen Chem Atlas source with permission confirmed by the site owner. Source and provenance are documented in SOURCE.md.
 
 ## Run locally
