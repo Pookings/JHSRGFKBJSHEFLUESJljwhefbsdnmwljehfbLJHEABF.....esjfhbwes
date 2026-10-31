@@ -13,3 +13,7 @@ The original dataset contains 30 units, 330 questions, 38 worked examples and 11
 ## Biology
 
 Shiruh Biology is adapted from https://github.com/amirlobel-elinor/genbio-atlas. Credit: Gen Bio Atlas contributors, 2026. The original biology study app, content and source references are retained. Branding, local subject navigation and search-indexing metadata were changed, and upstream analytics/feedback destinations removed. Code/interface assets are MIT licensed; original educational content is CC BY 4.0; OpenStax-derived practice questions are CC BY-NC-SA 4.0. Full notices remain under biology/LICENSE, biology/CONTENT_LICENSE.md and biology/ATTRIBUTION.md. This adaptation is a noncommercial study companion.
+
+## Portal and Element Atlas
+
+The subject picker layout is adapted from https://github.com/amirlobel-elinor/premed-atlas. The element app is adapted from https://github.com/amirlobel-elinor/element-atlas. Reuse permission was confirmed by the site owner. Local subject navigation, Shiruh branding and noindex metadata were added, upstream analytics removed, and Element Atlas was bundled into a single page with its original learning code and data. See ELEMENT_SOURCES.md for chemistry references.

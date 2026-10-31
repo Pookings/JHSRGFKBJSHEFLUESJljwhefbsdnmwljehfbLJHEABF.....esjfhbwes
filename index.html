@@ -1,1 +1,248 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Shiruh · Study subjects</title><style>*{box-sizing:border-box}body{margin:0;background:#f7f8f1;color:#173e36;font:16px system-ui,sans-serif}header{max-width:1100px;margin:auto;padding:30px 32px;border-bottom:1px solid #dce4d7;display:flex;justify-content:space-between;align-items:center}.brand{font:700 27px Georgia,serif}header span:last-child{font-size:12px;color:#6c7d71}main{max-width:1100px;margin:auto;padding:75px 32px}.kicker{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#697b6f}h1{font:500 58px/1.12 Georgia,serif;letter-spacing:-2px;max-width:650px;margin:20px 0}p{line-height:1.7;color:#61756a}.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:45px 0}a.card{color:inherit;text-decoration:none;border:1px solid #dce4d7;border-radius:18px;background:white;padding:32px;display:flex;flex-direction:column;min-height:315px;transition:transform .2s}a.card:hover{transform:translateY(-4px)}.chem{border-top:5px solid #766098!important}.bio{border-top:5px solid #5d9970!important}h2{font:400 35px Georgia,serif;margin:18px 0 5px}.pill{background:#edf1e3;padding:5px 10px;font-size:11px;border-radius:30px;display:inline-block;margin:5px 4px 5px 0}.open{margin-top:auto;padding-top:26px;font-weight:600;font-size:14px}footer{font-size:12px;line-height:1.7;color:#7d8b7f;border-top:1px solid #dce4d7;padding-top:22px}a:focus-visible{outline:3px solid #9b8cba;outline-offset:5px}@media(max-width:650px){header,main{padding:25px}main{padding-top:45px}.grid{grid-template-columns:1fr}h1{font-size:43px}a.card{min-height:280px}header span:last-child{display:none}}</style></head><body><header><span class="brand">Shiruh</span><span>Independent study tools</span></header><main><div class="kicker">Review · Practice · Explore</div><h1>What are we<br>studying today?</h1><p>Choose a subject. Review the concepts, test your recall, and try a study game.</p><div class="grid"><a class="card chem" href="chemistry.html"><div class="kicker">General chemistry</div><h2>Chemistry</h2><p>Atoms, reactions, bonding, molecular geometry and gases.</p><div><span class="pill">9 chapters</span><span class="pill">330 questions</span><span class="pill">Interactive labs</span></div><div class="open">Open chemistry ↗</div></a><a class="card bio" href="biology/"><div class="kicker">General biology</div><h2>Biology</h2><p>Cells, genetics, evolution, organisms and ecology.</p><div><span class="pill">56 chapters</span><span class="pill">1,966 terms</span><span class="pill">168 questions</span></div><div class="open">Open biology ↗</div></a></div><footer>Shiruh · Adapted study apps with original source credits retained.<br>Study progress stays in this browser. Export backups inside each subject before changing devices.</footer></main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#254e46">
+  <meta name="description" content="Study tools and games for CHEM 105a, BISC 120/220, and the periodic table. Open genChem, genBio, or Element Atlas.">
+  <title>Shiruh · Study tools & games</title>
+  <!-- ICON-LINKS-START -->
+  <link rel="icon" href="data:image/x-icon;base64,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" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAADmUlEQVRYhb1XS08TURSelf4Itq7cCtGNJkYTqbqQqGEBUgSUBW15DG2hlloI5aUEkIIrsS3BhWKQaBNiDLjxsVCh8REkAYUwbWemLYUSgb6OOXc6Q5GCPKY9yZe5c+b2fN89597beykqYWr1zFFayWhqlMzHmuLFVbqYATmBMUlsJaNGLirZqosWsmglMyU36c5imEnklEZeo2Rc+EFbwsC9O7wAQ+IpBxKx7ht50JW6BRFKZopkAtMukvc0+kCb6JAO1N5McJRIPhVVVfhrBl9QoUiub/ESyEHaWPGTQHxHDuTCdtWN39NUddF8VBRAOmjdYBjmCLB9WAGv+oYJkn0iF3JTktMgOI1ODkwuHwG2D0qsL12AiQEHxKdUBNhGXzIXYpsARP0jlkCOEqTMwP8E1Ja7CdIxB/YkgBbTeMsNxgrPNiTN4gNhzwKcz5YhlUWjcViYC4O1hc+MgHgc4M9qjCC8EZeErK/Hoanam34BkXB8i99u9RNRaMP24ObkLXdDq46FBpUnvQLoYgaWl6Lk27gzBBatF2a+r28pk5eJQF8rnx4BxgoP8aG9GArC/OwGaQcDUfj2ZQ0CPkFcaCVGtt9DC4jFhJEi3o6FyOhEf28zDz4uSmCpFeYDZkS0Fh0r/yoQbWxkReqLdX/c64c3L0PALISlPh0GVt4MjDtDxN9t3tymX4+ukD5ouEpmpzfkFRBJMQlFdJo4SaSjP0A2KVyaGRPg6A9Ie0LdbWH7HhkKZk5Ah4GV9gSciLgixHKgdSWVat8CBh8GyPr+4VrbUQBi9MmytENyngj0WniyHPG3zx3Bgwug9wGsvVnjSbnuMyKA3gf+EbC4qwA8RLbXcdBMs/CgyQdteo4A2+hvqPCQ/4AWLQvdZh+YNV4wqbxwV+3dMeamfxGoysI5wWlM3bnP4ofOBh46DBw4rEHob/OD1eIn7S4TD5ZaFtrrOeg08dCq48Da7CfHb3wf6F5KGRO/41NTMAtUWd6nCL40VbNgrpTnJLwbCI9G4Cm98jlMXT098lUsA46mo54DXYn8dwM8jmNs5BDTn3dmxEXl5tjVhRcmpI76MjeprWy3ogSwTHjEE3mQU3HCpqJyj/Uczc22T+afHwNNgTAf0gnkyD83Bsh5/fjTI+R+eOmULQsdF08OwrWzTihUTIDy8jtZgTExNnIgF3JuuSGjGkyJItv+QZFjCyly7CAvbCFFtu09ckgjpyjqL1nNM0HInJd9AAAAAElFTkSuQmCC">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij4KICA8dGl0bGU+UGEg4oCUIFByZW1lZCBBdGxhczwvdGl0bGU+CiAgPHJlY3QgeT0iNSIgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjMiIHJ4PSIyNCIgZmlsbD0iIzQ5MzVhMSIvPgogIDxyZWN0IHdpZHRoPSIxMjgiIGhlaWdodD0iMTIyIiByeD0iMjQiIGZpbGw9IiM3MzYwZTUiLz4KICA8cmVjdCB4PSI5IiB5PSI5IiB3aWR0aD0iMTEwIiBoZWlnaHQ9IjEwNCIgcng9IjE2IiBmaWxsPSJub25lIiBzdHJva2U9IiNlM2RjZmYiIHN0cm9rZS1vcGFjaXR5PSIuNjUiIHN0cm9rZS13aWR0aD0iMS4zIi8+CiAgPHBhdGggZD0iTTI0IDE5djEybS02LTZoMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzgwZTNlZCIgc3Ryb2tlLXdpZHRoPSIzLjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Im0xMDAgMTcgMi40IDYuNkwxMDkgMjZsLTYuNiAyLjRMMTAwIDM1bC0yLjQtNi42TDkxIDI2bDYuNi0yLjRaIiBmaWxsPSIjZmZkMTZiIi8+CiAgPHRleHQgeD0iNjMiIHk9Ijg3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0iQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNjUiIGZvbnQtd2VpZ2h0PSI3MDAiIGxldHRlci1zcGFjaW5nPSItMy40Ij5QYTwvdGV4dD4KICA8dGV4dCB4PSI2NCIgeT0iMTAzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZTNkY2ZmIiBmb250LWZhbWlseT0iQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNi41IiBmb250LXdlaWdodD0iNzAwIiBsZXR0ZXItc3BhY2luZz0iMS4xNSI+UFJFTUVEIEFUTEFTPC90ZXh0Pgo8L3N2Zz4K">
+  <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
+  <!-- ICON-LINKS-END -->
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f8f7f2;
+      --ink: #233c36;
+      --muted: #64716b;
+      --line: #dedfd7;
+      --green: #254e46;
+      --focus: #244dca;
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-synthesis: none;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+    body { margin: 0; background: var(--paper); color: var(--ink); -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    svg { display: block; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 6px; }
+    .shell { width: min(1160px, calc(100% - 64px)); margin-inline: auto; }
+    .skip { position: absolute; top: 8px; left: 16px; z-index: 10; padding: 12px 18px; background: white; transform: translateY(-160%); border-radius: 8px; }
+    .skip:focus { transform: none; }
+    .site-header { min-height: 102px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--line); gap: 24px; }
+    .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand-logo { width: 45px; height: 45px; flex: 0 0 auto; transform: rotate(-5deg); }
+    .brand-name { color: #24233f; font-family: ui-rounded, "Arial Rounded MT Bold", system-ui, sans-serif; font-size: 24px; font-weight: 780; letter-spacing: -1.1px; }
+    .brand-name span { font-weight: 450; }
+    .header-link { display: inline-flex; gap: 9px; align-items: center; min-height: 44px; font-size: 13px; font-weight: 650; text-decoration: none; }
+    .header-link svg { width: 17px; height: 17px; }
+    .header-link:hover { text-decoration: underline; text-underline-offset: 5px; }
+    .hero { display: flex; justify-content: space-between; align-items: center; gap: 32px; padding: 58px 0 45px; }
+    .eyebrow { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 750; letter-spacing: 1.65px; text-transform: uppercase; margin: 0 0 18px; }
+    .eyebrow::before { content: ""; width: 7px; height: 7px; background: #a16d2c; border-radius: 50%; }
+    h1 { font-size: clamp(36px, 4.4vw, 59px); line-height: 1.06; letter-spacing: -2.6px; font-weight: 780; margin: 0; max-width: 730px; }
+    h1 span { display: block; }
+    .intro { margin: 19px 0 0; color: var(--muted); font-size: 16px; line-height: 1.6; }
+    .hero-doodle { flex: 0 0 206px; width: 206px; margin-right: 15px; transform: rotate(5deg); }
+    .app-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+    .app { --accent: #265e53; --tint: #e2eee6; --soft: #eff5ef; display: flex; flex-direction: column; border: 1px solid #d5ded4; border-radius: 22px; overflow: hidden; text-decoration: none; background: #fffefa; box-shadow: 0 4px 0 #eaece3; transition: transform .18s ease, box-shadow .18s ease; }
+    .app:hover { transform: translateY(-5px); box-shadow: 0 9px 0 #eaece3, 0 15px 25px #233c360a; }
+    .app:focus-visible { outline-offset: 5px; }
+    .bio { --accent: #63518c; --tint: #ece6f5; --soft: #f4f0fa; border-color: #ddd5e7; }
+    .element { --accent: #934619; --tint: #ffe5c8; --soft: #fff6eb; border-color: #ead2b8; }
+    .illustration { height: 176px; position: relative; display: flex; align-items: center; justify-content: center; background-color: var(--tint); background-image: radial-gradient(#233c3617 .8px, transparent .8px); background-size: 16px 16px; border-bottom: 1px solid #233c3610; }
+    .illustration > svg { width: 100%; height: 100%; }
+    .app-body { padding: 26px 25px 24px; display: flex; flex-direction: column; flex: 1; }
+    .subject { color: var(--accent); font-size: 10px; font-weight: 750; letter-spacing: 1.4px; text-transform: uppercase; margin: 0 0 9px; }
+    h2 { font-size: clamp(25px, 2.5vw, 30px); font-weight: 780; letter-spacing: -1.1px; line-height: 1.15; margin: 0; white-space: nowrap; }
+    .app-name { color: var(--muted); font-size: 13px; margin: 8px 0 0; }
+    .description { font-size: 14px; line-height: 1.65; margin: 19px 0 16px; color: #56665f; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; padding: 0; margin: auto 0 25px; }
+    .tags li { padding: 5px 8px; border-radius: 6px; color: var(--accent); background: var(--soft); font-size: 10px; font-weight: 650; }
+    .action { display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 46px; padding: 11px 14px; border-radius: 10px; color: #fff; background: var(--accent); font-size: 13px; font-weight: 700; }
+    .action svg { width: 17px; height: 17px; transition: transform .18s ease; }
+    .app:hover .action svg { transform: translate(2px, -2px); }
+    .link-note { margin: 17px 0 0; color: var(--muted); font-size: 11px; text-align: right; }
+    .site-footer { margin-top: 44px; padding: 24px 0 31px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 12px; color: var(--muted); }
+    .site-footer p { margin: 0; }
+    .feedback { display: inline-flex; align-items: center; gap: 7px; min-height: 36px; text-decoration: none; font-weight: 650; color: var(--ink); }
+    .feedback:hover { text-decoration: underline; text-underline-offset: 4px; }
+    .feedback svg { width: 16px; height: 16px; }
+    @media (min-width: 1400px) { .hero { padding-top: 66px; padding-bottom: 50px; } }
+    @media (max-width: 920px) {
+      .shell { width: calc(100% - 40px); }
+      .app-grid { gap: 14px; }
+      .app-body { padding: 22px 18px; }
+      .hero-doodle { flex-basis: 165px; width: 165px; margin-right: 0; }
+      h1 { font-size: 46px; }
+      h2 { font-size: 25px; }
+    }
+    @media (max-width: 760px) {
+      .hero { padding: 38px 0 31px; }
+      .hero-doodle { display: none; }
+      .app-grid { grid-template-columns: 1fr; gap: 24px; }
+      .app { display: grid; grid-template-columns: 32% 1fr; border-radius: 18px; }
+      .illustration { height: 100%; border-bottom: 0; border-right: 1px solid #233c3610; }
+      .illustration > svg { min-height: 150px; }
+      .app-body { padding: 22px; }
+      h2 { font-size: 28px; }
+      .description { margin-block: 14px; }
+      .tags { margin-bottom: 18px; }
+      .site-footer { margin-top: 30px; }
+    }
+    @media (max-width: 500px) {
+      .shell { width: calc(100% - 32px); }
+      .site-header { min-height: 83px; gap: 12px; }
+      .brand-logo { width: 37px; height: 37px; }
+      .brand { gap: 8px; }
+      .brand-name { font-size: 21px; }
+      .header-link { font-size: 12px; }
+      .header-link svg { display: none; }
+      h1 { font-size: clamp(33px, 9.5vw, 44px); letter-spacing: -1.8px; }
+      .intro { font-size: 14px; max-width: 320px; margin-top: 16px; }
+      .eyebrow { font-size: 10px; margin-bottom: 15px; }
+      .app { display: flex; }
+      .illustration { height: 145px; border-right: 0; border-bottom: 1px solid #233c3610; }
+      .app-body { padding: 23px; }
+      h2 { font-size: 30px; }
+      .description { max-width: 340px; }
+      .site-footer { align-items: flex-start; flex-direction: column; gap: 4px; }
+      .link-note { text-align: left; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+      .app:hover, .app:hover .action svg { transform: none; }
+    }
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#apps">Skip to study apps</a>
+  <div class="shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Shiruh home">
+        <!-- BRAND-LOGO-START -->
+        <svg class="brand-logo" viewBox="0 0 128 128" aria-hidden="true"><rect y="5" width="128" height="123" rx="24" fill="#4935a1"/>
+  <rect width="128" height="122" rx="24" fill="#7360e5"/>
+  <rect x="9" y="9" width="110" height="104" rx="16" fill="none" stroke="#e3dcff" stroke-opacity=".65" stroke-width="1.3"/>
+  <path d="M24 19v12m-6-6h12" fill="none" stroke="#80e3ed" stroke-width="3.8" stroke-linecap="round"/>
+  <path d="m100 17 2.4 6.6L109 26l-6.6 2.4L100 35l-2.4-6.6L91 26l6.6-2.4Z" fill="#ffd16b"/>
+  <text x="63" y="87" text-anchor="middle" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="65" font-weight="700" letter-spacing="-3.4">Sh</text>
+  <text x="64" y="103" text-anchor="middle" fill="#e3dcff" font-family="Arial,Helvetica,sans-serif" font-size="6.5" font-weight="700" letter-spacing="1.15">SHIRUH</text></svg>
+        <!-- BRAND-LOGO-END -->
+        <span class="brand-name">Shiruh</span>
+      </a>
+      <a class="header-link" href="#apps">Study apps <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 5v14m-6-6 6 6 6-6"/></svg></a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="welcome">
+        <div>
+          <p class="eyebrow">Study tools &amp; games</p>
+          <h1 id="welcome">What are we <span>studying today?</span></h1>
+          <p class="intro">Review a topic. Try some questions. Play a study game.</p>
+        </div>
+        <svg class="hero-doodle" viewBox="0 0 206 176" aria-hidden="true">
+          <rect x="29" y="23" width="134" height="131" rx="17" fill="#e6e3d6" transform="rotate(-13 96 88)"/>
+          <rect x="38" y="15" width="134" height="131" rx="17" fill="#fffefa" stroke="#c9cfc1" stroke-width="1.5"/>
+          <path d="M55 36h24m-24 7h15" stroke="#bbc7bb" stroke-width="2" stroke-linecap="round"/>
+          <!-- HERO-LOGO-START -->
+          <svg x="65" y="43" width="81" height="81" viewBox="0 0 128 128"><rect y="5" width="128" height="123" rx="24" fill="#4935a1"/>
+  <rect width="128" height="122" rx="24" fill="#7360e5"/>
+  <rect x="9" y="9" width="110" height="104" rx="16" fill="none" stroke="#e3dcff" stroke-opacity=".65" stroke-width="1.3"/>
+  <path d="M24 19v12m-6-6h12" fill="none" stroke="#80e3ed" stroke-width="3.8" stroke-linecap="round"/>
+  <path d="m100 17 2.4 6.6L109 26l-6.6 2.4L100 35l-2.4-6.6L91 26l6.6-2.4Z" fill="#ffd16b"/>
+  <text x="63" y="87" text-anchor="middle" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="65" font-weight="700" letter-spacing="-3.4">Sh</text>
+  <text x="64" y="103" text-anchor="middle" fill="#e3dcff" font-family="Arial,Helvetica,sans-serif" font-size="6.5" font-weight="700" letter-spacing="1.15">SHIRUH</text></svg>
+          <!-- HERO-LOGO-END -->
+          <circle cx="166" cy="140" r="21" fill="#e1ae58" stroke="#f8f7f2" stroke-width="5"/>
+          <path d="m157 140 6 6 11-12" fill="none" stroke="#3c4b33" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M18 71v12m-6-6h12M184 41v10m-5-5h10" stroke="#8d9f8d" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </section>
+
+      <section class="app-grid" id="apps" aria-label="Choose a study app">
+        <!-- Each entire card is one link. The small feature labels are not buttons. -->
+        <a class="app chem" href="chemistry.html" target="_blank" rel="noopener noreferrer" aria-label="Open CHEM 105a — genChem atlas (new tab)">
+          <div class="illustration" aria-hidden="true">
+            <svg viewBox="0 0 360 176" fill="none">
+              <circle cx="180" cy="91" r="65" fill="#f3f8ed" opacity=".7"/>
+              <g stroke="#739b85" stroke-width="4" stroke-linecap="round"><path d="m177 78-40 39m47-39 40 39"/></g>
+              <circle cx="181" cy="68" r="28" fill="#377967" stroke="#fffefa" stroke-width="3"/>
+              <circle cx="129" cy="125" r="19" fill="#fffefa" stroke="#8fae97" stroke-width="2"/>
+              <circle cx="232" cy="125" r="19" fill="#fffefa" stroke="#8fae97" stroke-width="2"/>
+              <g font-family="Arial, sans-serif" text-anchor="middle" font-weight="700"><text x="181" y="76" fill="#fffefa" font-size="24">O</text><text x="129" y="131" fill="#377967" font-size="17">H</text><text x="232" y="131" fill="#377967" font-size="17">H</text></g>
+              <g transform="rotate(-9 79 63)"><rect x="47" y="37" width="55" height="47" rx="9" fill="#fffefa" stroke="#aac2ac"/><path d="M59 52h14m-14 7h24" stroke="#b1c3b1" stroke-width="2" stroke-linecap="round"/><path d="m78 70 4 4 9-10" stroke="#39795e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></g>
+              <g transform="rotate(8 279 59)"><rect x="254" y="38" width="46" height="39" rx="9" fill="#d4e3d3" stroke="#a3bda6"/><path d="m268 55 6-6 6 6-6 6-6-6Zm12 0h7" stroke="#5c8b70" stroke-width="1.5"/></g>
+              <path d="M279 117v12m-6-6h12M87 117v8m-4-4h8" stroke="#89a58c" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="app-body">
+            <p class="subject">General chemistry</p>
+            <h2>CHEM 105a</h2>
+            <p class="app-name">genChem atlas</p>
+            <p class="description">Review concepts and practice chemistry with questions and games.</p>
+            <ul class="tags" aria-label="Includes"><li>Review</li><li>Practice</li><li>Games</li></ul>
+            <span class="action">Open chemistry <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+          </div>
+        </a>
+
+        <a class="app bio" href="biology/" target="_blank" rel="noopener noreferrer" aria-label="Open BISC 120/220 — genBio atlas (new tab)">
+          <div class="illustration" aria-hidden="true">
+            <svg viewBox="0 0 360 176" fill="none">
+              <circle cx="180" cy="87" r="65" fill="#f8f4fc" opacity=".75"/>
+              <g transform="rotate(21 180 88)">
+                <g stroke="#c3acd7" stroke-width="2.4" stroke-linecap="round"><path d="M153 27h54M164 44h32M171 63h18M159 83h42M150 102h60M161 122h38M173 140h14"/></g>
+                <path d="M150 20c0 32 60 48 60 80s-60 42-60 57" stroke="#705593" stroke-width="6" stroke-linecap="round"/>
+                <path d="M210 20c0 32-60 48-60 80s60 42 60 57" stroke="#b598c9" stroke-width="6" stroke-linecap="round"/>
+              </g>
+              <g transform="rotate(-10 80 68)"><rect x="54" y="45" width="49" height="46" rx="10" fill="#fffefa" stroke="#c3b5d7"/><circle cx="78" cy="67" r="12" stroke="#9c83b4" stroke-width="1.5"/><ellipse cx="78" cy="67" rx="5" ry="7" fill="#c0abd1"/><circle cx="68" cy="62" r="2" fill="#b6a4c7"/><circle cx="84" cy="74" r="2" fill="#b6a4c7"/></g>
+              <g transform="rotate(7 281 111)"><rect x="258" y="87" width="47" height="48" rx="9" fill="#fffefa" stroke="#c3b5d7"/><path d="m268 101 3 3 5-6m-8 17 3 3 5-6" stroke="#705593" stroke-width="2" stroke-linecap="round"/><path d="M283 101h12m-12 14h12" stroke="#c3b5d7" stroke-width="2" stroke-linecap="round"/></g>
+              <path d="M278 43v12m-6-6h12M89 122v8m-4-4h8" stroke="#ac95c4" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="app-body">
+            <p class="subject">General biology</p>
+            <h2>BISC 120/220</h2>
+            <p class="app-name">genBio atlas</p>
+            <p class="description">Review biology and build a practice test for the topics you need.</p>
+            <ul class="tags" aria-label="Includes"><li>Review</li><li>Practice tests</li></ul>
+            <span class="action">Open biology <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+          </div>
+        </a>
+
+        <a class="app element" href="elements.html" target="_blank" rel="noopener noreferrer" aria-label="Open Element Atlas (new tab)">
+          <div class="illustration" aria-hidden="true">
+            <svg viewBox="0 0 360 176" fill="none">
+              <circle cx="180" cy="87" r="65" fill="#fff7e6" opacity=".8"/>
+              <g transform="rotate(-12 133 85)"><rect x="91" y="43" width="75" height="88" rx="11" fill="#fffefa" stroke="#d2b377" stroke-width="1.5"/><g fill="#886024" font-family="Arial, sans-serif"><text x="101" y="61" font-size="10">6</text><text x="128" y="96" font-size="35" font-weight="700" text-anchor="middle">C</text><text x="128" y="116" font-size="9" text-anchor="middle">Carbon</text></g></g>
+              <g transform="rotate(9 211 86)"><rect x="173" y="36" width="79" height="95" rx="11" fill="#cf9844" stroke="#ae7b30" stroke-width="1.5"/><g fill="#fffdf6" font-family="Arial, sans-serif"><text x="184" y="56" font-size="10">8</text><text x="213" y="96" font-size="38" font-weight="700" text-anchor="middle">O</text><text x="213" y="116" font-size="9" text-anchor="middle">Oxygen</text></g></g>
+              <circle cx="261" cy="122" r="17" fill="#fffefa" stroke="#d2b377" stroke-width="1.5"/><path d="m254 122 5 5 8-10" stroke="#986e30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M74 104v12m-6-6h12M280 56v8m-4-4h8" stroke="#c5a667" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="app-body">
+            <p class="subject">The periodic table</p>
+            <h2>Element Atlas</h2>
+            <p class="app-name">Elements &amp; recall games</p>
+            <p class="description">Learn the elements, explore the periodic table, and test your recall.</p>
+            <ul class="tags" aria-label="Includes"><li>Periodic table</li><li>Games</li></ul>
+            <span class="action">Open elements <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+          </div>
+        </a>
+      </section>
+      <p class="link-note">Each app opens in a new tab.</p>
+    </main>
+
+    <footer class="site-footer">
+      <p>Shiruh · Independent study tools</p>
+      <span>Independent study companion</span>
+    </footer>
+  </div>
+</body>
+</html>
